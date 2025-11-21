@@ -1,0 +1,719 @@
+{
+
+    "phases":
+        [
+
+//        {
+        // Vm = M / dens
+//            "name": "MineralName",
+//            "molarVolume": 1.2345 // molar volume in [cm3/mol]
+//        },
+
+
+        // clinker minerals:
+        {
+            "name": "Alite",
+            "molarVolume": 71 //  http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+        },
+
+        {
+            // rho = 3.280 g/cm3 // G. C. Bye - Portland Cement: Composition, Production and Properties
+            // VM = 52 cm3/mol // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+            "name": "Belite",
+            "molarVolume": 52
+        },
+
+        {
+            // rho = 3.030 g/cm3 // G. C. Bye - Portland Cement: Composition, Production and Properties
+            // VM = 89.1 cm3/mol // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+            "name": "Aluminate",
+            "molarVolume": 89.1
+        },
+
+        {
+            // VM = 128 cm3/mol // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+            "name": "Ferrite",
+            "molarVolume": 128
+        },
+        /////////////////////////
+
+        {
+            // CEBAMA modelling task: 45.03 = 130.59 / 2.900
+            "name": "Slag_VTT",
+            "molarVolume": 45
+
+        },
+
+        {
+            // CEBAMA modelling task: 28 = 64.54 / 2.300
+            "name": "SilicaFume",
+            "molarVolume": 28
+
+        },
+
+
+
+        {
+            "name": "Halite",
+            "molarVolume": 27 //  Greg M. Anderson,David A. Crerar - Thermodynamics in Geochemistry: The Equilibrium Model
+        },
+
+        {
+            "name": "BaCl2:2H2O(s)",
+            "molarVolume": 54 // 208.23 / 3.86
+        },
+
+        {
+            "name": "Witherite",
+            "molarVolume": 46 // phreeqc.dat
+        },
+
+        {
+            "name": "Natron",
+            "molarVolume": 38.2 // 84 / 2.2 [cm3/mol]
+        },
+
+        {
+            "name": "Calcite",
+            "molarVolume": 36.9 // cm3/mol # MW (100.09 g/mol) / rho (2.71 g/cm3)
+        },
+
+        {
+            "name": "Gypsum",
+            "molarVolume": 75
+            // phreeqc.dat: Vm = 73.9
+            // Lothenbach(2008): Vm = 75
+        },
+
+        {
+            "name": "Anhydrite",
+            "molarVolume": 46.1 // phreeqc.dat
+        },
+
+        {
+            "name": "Bassanite", // hemihydrate / CaSO4 + 0.5 H2O
+            "molarVolume": 52.0 // 142.141 / 2.733 Balonis(2009)
+        },
+
+        {
+            "name": "Ettringite",
+            "molarVolume": 707
+            // 710.32 = 1254 / 1.778  Balonis(2009)
+            // Jacques(2009): Vm = 707, M = 1255.11
+            // http://database.iem.ac.ru/mincryst/s_carta.php?ETTRINGITE+1388 Vm = 710.32
+            // Lothenbach(2008): Vm = 707
+        },
+
+
+        // Fe-Ettringite
+        // Jacques(2009): Vm = 718, M = 1312.84
+        // Lothenbach(2008): Vm = 717
+        // 716.7 = 1311.6 / 1.830  Balonis(2009)
+        // Blanc(2010): Vm = 711.80
+        {
+            "name": "Ettringite(Fe)",
+            "molarVolume": 716.7
+
+        },
+
+        {
+            "name": "Fe-ettringite",
+            "molarVolume": 716.7
+
+        },
+        //////////////////////
+
+        // Jennite
+        // M = 1062 / 6 = 177
+        // 456.2 = 1063.37 / 2.331 (Ca9Si6O18(OH)6•8H2O) http://webmineral.com/data/Jennite.shtml#.V2uvWIb0lHc + Balonis(2009)
+        // 457.47 (Ca9Si6O18(OH)6 · 8H2O) http://database.iem.ac.ru/mincryst/s_carta.php?JENNITE+7193
+        // Blanc(2010): Vm = 450.71
+        // Jacques(2009): Vm = 78, M = 191.34
+        // Lothenbach(2008): Vm = 78
+        {
+            // Ca9Si6O16(OH)10:6(H2O)
+            "name": "Jennite",
+            "molarVolume": 450
+        },
+
+
+        {
+            // Jacques(2009): (CaO)1.67(SiO2)(H2O)2.1
+            "name": "CSHjen",
+            "molarVolume": 78
+        },
+        ///////////////////
+
+
+        {
+            "name": "Afwillite",
+            "molarVolume": 129.5 //  342.45  /  2.645  Balonis(2009)
+        },
+
+
+        // Tobermorite section
+
+
+        // dry minerals without gel pore water
+        {
+            "name": "Tobermorite(14A)",
+            "molarVolume": 59
+            // 315.2 = 702.36 /  2.228  Balonis(2009)
+            // Blanc(2010): Vm = 351.30
+        },
+
+        {
+            // see Tobermorite(14A)
+            "name": "Tobermorite-14A",
+            "molarVolume": 59
+            // 315.2 = 702.36 /  2.228  Balonis(2009)
+            // Blanc(2010): Vm = 351.30
+        },
+
+        {
+            "name": "Tobermorite(11A)",
+            "molarVolume": 59
+            // Blanc(2010): Vm = 290.28
+        },
+
+        {
+            "name": "Tobermorite-11A",
+            "molarVolume": 59
+            // Blanc(2010): Vm = 290.28
+        },
+
+
+        {
+            // Jacques(2009):
+            // Tobermorite-I: (CaO)2(SiO2)2.4(H2O)3.2, Vm = 141, M = 314.01
+            "name": "CSHtob1",
+            "molarVolume": 141
+        },
+
+        {
+            // Jacques(2009):
+            // Tobermorite-II: Vm = 59, M = 130.84
+            "name": "CSHtob2",
+            "molarVolume": 59
+        },        
+
+        // CSHQ section ///////////
+        {
+            "name": "CSHQ_TobH",
+            "molarVolume": 55.3
+        },
+
+        {
+            "name": "CSHQ_TobD",
+            "molarVolume": 47.95
+        },
+
+        {
+            "name": "CSHQ_JenH",
+            "molarVolume": 75.63
+        },
+
+        {
+            "name": "CSHQ_JenD",
+            "molarVolume": 80.58
+        },
+
+
+        /////////////////////
+
+
+        {
+            "name": "Portlandite",
+            "molarVolume": 32.9 // 74 / 2.251 Balonis(2009)
+            // Lothenbach(2008): Vm = 33
+        },
+
+        /////////////////////
+        {
+            "name": "Monosulfoaluminate",
+            "molarVolume": 308.8 // 622.33 /  2.015 Balonis(2009)
+            // Jacques(2009): Vm = 309
+        },
+
+        {
+            // see Monosulfoaluminate
+            "name": "monosulfoaluminate",
+            "molarVolume": 308.8
+        },
+        //////////////////////
+
+        // Fe variant of Monosulfate
+        // Jacques(2009): Vm = 321
+        // Lothenbach(2008): Vm = 322
+        // Blanc(2010): Vm = 316.06
+        {
+            "name": "Fe-monosulfate",
+            "molarVolume": 321
+        },
+
+        {
+            "name": "Monosulfate(Fe)",
+            "molarVolume": 321
+
+        },
+        ////////////////////////////
+
+
+        {
+            "name": "Friedel_Salt",
+            "molarVolume": 271.9
+            // 271.9 = 561.18 /  2.064 Balonis(2009)
+            // Blanc(2010): Vm = 276.24
+        },
+
+        {
+            // see Friedel_Salt
+            "name": "Friedel-salt",
+            "molarVolume": 271.9
+        },
+
+        {
+            "name": "Jaffeite",
+            "molarVolume": 173.1 // 458.61 / 2.65 http://webmineral.com/data/Jaffeite.shtml#.V3GfYOfL-2k
+        },
+
+        {
+            "name": "Monocarboaluminate",
+            "molarVolume": 261.4 // 568.448 (Ca4Al2CO9 + 11 H2O) / 2.175 Balonis(2009)
+            // Blanc(2010): Vm = 261.96
+            // Jacques(2009): Vm = 262, M = 568.45
+        },
+
+        {
+            "name": "Tricarboaluminate",
+            "molarVolume": 650 // Lothenbach(2008)
+        },
+
+
+        // Fe-Monocarbonate
+        {
+            "name": "Fe-monocarbonate",
+            "molarVolume": 290
+            // Lothenbach(2009): Vm = 290
+        },
+        /////////////////////
+
+        {
+            "name": "Straetlingite",
+            "molarVolume": 215.63
+            // 211.0 = 418.323 (Ca2Al2SiO7 + 8 H2O) / 1.937 Balonis(2009)
+            // Jacques(2009): Vm = 216, M = 418.32
+            // Blanc(2010): Vm = 215.63
+            // Lothenbach(2009): Vm = 216
+        },
+
+        {
+            // see Straetlingite
+            "name": "Stratlingite",
+            "molarVolume": 215.63
+        },
+
+        {
+            // see Straetlingite
+            "name": "stratlingite",
+            "molarVolume": 215.63
+        },
+
+        {
+            "name": "Fe-stratlingite",
+            "molarVolume": 227
+            // Lothenbach(2009): Vm = 227
+        },
+
+        {
+            "name": "Hydrophilite",
+            "molarVolume": 51.62 // 110.98 / 2.15 // handbook of chemistry and physics
+        },
+
+
+        // Iron Hydroxide
+        // Lothenbach(2008): Vm = 34
+        // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm: Vm = 69.8
+        {
+            "name": "Ferrihydrite(2L)",
+            "molarVolume": 34
+        },
+
+        {
+            "name": "Fe(OH)3mic",
+            "molarVolume": 34
+        },
+
+        {
+            "name": "Ferrihydrite(6L)",
+            "molarVolume": 34
+        },
+
+        {
+            "name": "Ferrihydrite(am)",
+            "molarVolume": 34
+        },
+        //////////////////
+
+
+        // TODO: check CSH molar volume
+        //  "molarVolume": 108 // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+        {
+            "name": "CSH(0.8)",
+            "molarVolume": 400 // average from jennite + tobermorite
+        },
+
+        {
+            // Thermochimie
+            "name": "CSH0.8",
+            "molarVolume": 59.290
+        },
+
+        {
+            "name": "CSH(1.2)",
+            "molarVolume": 400 // average from jennite + tobermorite
+        },
+
+        {
+            // Thermochimie
+            "name": "CSH1.2",
+            "molarVolume": 71.950
+        },
+
+        {
+            "name": "CSH(1.6)",
+            "molarVolume": 400 // average from jennite + tobermorite
+        },
+
+        {
+            // Thermochimie
+            "name": "CSH1.6",
+            "molarVolume": 84.680
+        },
+        ///////////////////////
+
+        {
+            "name": "Lime",
+            "molarVolume": 16.8 // 56.0774 / 3.341 Balonis(2009)
+        },
+
+        {
+            // see Lime
+            "name": "CaO(cr)",
+            "molarVolume": 16.8
+        },
+
+
+        // Silica
+        {
+            "name": "Amorphous_silica",
+            //                "molarVolume": 25.7 // pitzner.dat
+            "molarVolume": 22.6 // 60.0843 / 2.660 Balonis(2009)
+
+        },
+
+        {
+            // see Amorphous_silica
+            "name": "SiO2(am)",
+            "molarVolume": 22.6
+        },
+
+        {
+            // Jacques(2009): Vm = 29
+            "name": "SiO2am",
+            "molarVolume": 29
+        },
+
+        {
+            "name": "Quartz",
+            "molarVolume": 22.6 // FIXME: copy from amorphus silica
+        },
+
+        {
+            "name": "Quartz(alpha)",
+            "molarVolume": 22.6 // FIXME: copy from amorphus silica
+        },
+        //////////////////////
+
+        {
+            "name": "Corundum",
+            "molarVolume": 25.6 // 101.96 / 3.990 Balonis(2009)
+        },
+
+        {
+            // see Corundum
+            "name": "Corundum(alpha)",
+            "molarVolume": 25.6 // 101.96 / 3.990 Balonis(2009)
+        },
+
+
+        // Iron Oxide
+        {
+            "name": "Maghemite(disordered)",
+            "molarVolume": 30.5
+            // 159.69 / 5.24
+            // http://www.lesker.com/msds/pdfs/cd72f997d54d3bc42d09a34d6bdca56ebf2ea7fd3a31f08843ec5bd413.pdf
+        },
+
+        {
+            "name": "Hematite",
+            "molarVolume": 30.39 // phreeqc.dat
+        },
+        ///////////////
+
+        {
+            "name": "Kaolinite",
+            "molarVolume": 99.35 // phreeqc.dat
+        },
+
+        {
+            "name": "Anorthite",
+            "molarVolume": 105.05 // phreeqc.dat
+            // 101.6 http://webmineral.com/data/Anorthite.shtml#.V3TaWpS81ng
+        },
+
+
+        // Hydrogarnet data (Al only)
+        // http://ciks.cbt.nist.gov/~garbocz/AmCeram/node10.htm
+        // 149.52 = 378.285 / 2.530 Balonis(2009)
+        // Lothenbach(2008): Vm = 150
+        // Blanc(2010): Vm = 154.50; (Katoite 141.51)
+        {
+            "name": "C3AH6",
+            "molarVolume": 150
+        },
+
+        {
+            "name": "Hydrogarnet",
+            "molarVolume": 150
+        },
+
+        {
+            "name": "hydrogarnetOH",
+            "molarVolume": 150
+        },
+        ///////////////////
+
+        // Fe-Hydrogarnet
+        // Lothenbach(2008): Vm = 155
+        // 155.22 = 436.012 / 2.809 Balonis(2009)
+        {
+            "name": "C3FH6",
+            "molarVolume": 155.22
+
+        },
+
+        {
+            "name": "hydrogarnetFe",
+            "molarVolume": 155.22
+
+        },
+        //////////////////
+
+        // Si-Hydrogarnet
+        {
+            "name": "hydrogarnetSi",
+            "molarVolume": 143
+            // Lothenbach(2008): Vm = 143 (C3AS0.8H4.4)
+        },
+
+        {
+            "name": "C2AH8",
+            "molarVolume": 183.65 // 358.116 / 1.95 // Talaber(1993)
+            // 1.950 Balonis(2009)
+        },
+
+        {
+            "name": "C2FH8",
+            "molarVolume": 194 // Jacques(2009)
+        },
+
+        {
+            "name": "C2FSH8",
+            "molarVolume": 227 // Jacques(2009)
+        },
+
+        // Hydroxy-Afm
+        {
+            "name": "C4AH13",
+            "molarVolume": 274 // Zhang(2013)
+            // 274.16 = 560.378 / 2.044 Balonios(2009)
+        },
+
+        // Fe-Hydroxy-Afm
+        {
+            "name": "C4FH13",
+            "molarVolume": 274.40
+            // 285.90 = 560.378 / 2.162 Balonios(2009)
+            // Blanc(2010) = 274.40
+        },
+
+        {
+            "name": "CAH10",
+            "molarVolume": 193.2 // 338.1 / 1.75 Talaber(1993)
+        },
+
+        {
+            "name": "C2SHa",
+            "molarVolume": 71.12 // Blanc(2010)
+        },
+
+        {
+            // see C2SHa
+            "name": "C2SH(alpha)",
+            "molarVolume": 71.12 // Blanc(2010)
+        },
+
+        {
+            "name": "Foshagite",
+            "molarVolume": 160.66 // Blanc(2010)
+        },
+
+        {
+            "name": "Hillebrandite",
+            "molarVolume": 72.58 // Blanc(2010)
+        },
+
+        {
+            "name": "Wollastonite",
+            "molarVolume": 39.66 // Zhu(1994)
+        },
+
+        {
+            "name": "Hemicarboaluminate",
+            "molarVolume": 285
+            // Blanc(2010): Vm = 569.02
+            // Jacques(2009): Vm = 285, M = 564.46
+            // Lothenbach(2008): Vm = 285
+        },
+
+        {
+            "name": "Fe-hemicarbonate",
+            "molarVolume": 296
+            // Lothenbach(2008): Vm = 296
+        },
+
+        {
+            "name": "Okenite",
+            "molarVolume": 94.77 // Blanc(2010)
+        },
+
+        {
+            "name": "Gyrolite",
+            "molarVolume": 137.34 // Blanc(2010)
+        },
+
+        {
+            "name": "Al(OH)3am",
+            "molarVolume": 32.22 // 78 / 2.421 Gippsite? Balonios(2009)
+        },
+
+        {
+            "name": "Gibbsite(am)",
+            "molarVolume": 32.22 // see Al(OH)3am
+        },
+
+        {
+            "name": "Gibbsite(mc)",
+            "molarVolume": 32.22 // see Al(OH)3am
+        },
+
+        {
+            "name": "Thaumasite",
+            "molarVolume": 329.40 // Blanc(2010)
+        },
+
+        {
+            "name": "Grossular",
+            "molarVolume": 125.28 // Blanc(2010)
+        },
+
+        {
+            "name": "Hydrogrossular",
+            "molarVolume": 149.52 // Blanc(2010)
+        },
+
+        {
+            "name": "Fe(OH)2",
+            "molarVolume": 26.43  // 89.86 / 3.4  Jean d'. Ans, Ellen Lax, Roger Blachnik: Taschenbuch für Chemiker und Physiker
+        },
+
+        {
+            "name": "Berthierine(FeIII)",
+            "molarVolume": 97.68 // 295.97 / 3.03 http://webmineral.com/data/Berthierine.shtml#.V6NHU2SLTRY
+        },
+
+        {
+            "name": "Grunerite",
+            "molarVolume": 276.86 // http://database.iem.ac.ru/mincryst/s_carta.php?GRUNERITE+1820
+        },
+
+        {
+            // Mg(OH)2
+            "name": "Brucite",
+            "molarVolume": 24.6 // pitzner.dat
+        },
+
+
+        // Hydrotalcite (OH)
+        // Balonis(2009): 217.75 = 443.332 / 2.036
+        {
+            // thermochimie
+            "name": "Hydrotalcite",
+            "molarVolume": 217.75
+        },
+
+        {
+            // cemdata
+            "name": "hydrotaliceOH",
+            "molarVolume": 217.75
+        },
+
+        //////////////////////
+
+
+        // Hydrotalcite (CO3)
+
+        {
+            // thermochimie
+            // Mg4Al2(OH)12CO3:2H2O
+            // ATTENTION: crystal water is different than other sources
+            "name": "Hydrotalcite-CO3",
+            "molarVolume": 231.460 // from thermochimie website
+        },
+
+        {
+            // cemdata
+            // Mg4Al2(OH)12CO3:3H2O
+            // Balonis(2009): 221.17 = 469.326 / 2.122
+            "name": "hydrotalciteC",
+            "molarVolume": 221.17
+        },
+        //////////////////////
+
+
+        {
+            // cemdata
+            // Balonis(2009): 127.54 = 328.415 / 2.575
+            "name": "syngenite",
+            "molarVolume": 127.54
+        },
+
+        {
+            // thermochmie
+            // Balonis(2009): 53.36 = 142.042 / 2.662
+            "name": "Thernardite",
+            "molarVolume": 53.36
+        },
+
+        {
+            // thermochmie
+            // Balonis(2009): 65.31 = 174.259 / 2.668
+            "name": "Arcanite",
+            "molarVolume": 65.31
+        }
+
+    ]
+
+
+}

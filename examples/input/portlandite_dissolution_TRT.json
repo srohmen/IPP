@@ -1,0 +1,135 @@
+{
+    "maxIter": 1000,
+    "outputFrequency": 1,
+    // "chemistry_tolerance": 0.01,
+    // "checkpointingTime": 0.0, // minutes calc time
+
+    "LBCollType": "PTRT",
+    "diff_coef_reference": 1.0E-9, // m2/s
+    "tau_reference": 1,
+    "porosity_reference": 1.0,
+    "porosity_low": 0.5,
+
+    "dimensions":
+    {
+        "dims": [ 101, 2],
+        "offset": [ 0.0E-6, 0.0E-6 ],
+        "spatial_resolution": 1.0,
+        "porosity_threshold": 0.5,
+
+        "boundary_conditions":
+        {
+            "periodic": [false, true],
+
+            "domains":
+                [
+                {
+                    "name": "boundary",
+                    "position": "right",
+                    "range": [0, 1]
+                }
+
+            ]
+            ,"diffusive":
+                [
+                {
+                    "domain": "boundary",
+                    "type": "constant",
+                    "composition": "Water"
+                }
+            ]
+        }
+    },
+
+
+    "database": "cemdata07_CSH_emul.dat",
+
+    "database_extension": "molar_volumes.json",
+
+    "phase_black_list":
+        [
+        "H2(g)",
+        "O2(g)",
+        "Ca(s)",
+        "CaO(cr)",
+        "H2O(g)",
+
+        "Alite",
+        "Belite"
+    ],
+
+
+    "compositions":
+        [
+
+        {
+            "name": "Water",
+            "units": "mol/kgw"
+        },
+
+
+        {
+            "name": "Portlandite",
+            "units": "mol/kgw",
+            "element_concentrations":
+                [
+
+                {"name": "Ca", "conc": 0.019 }
+            ]
+
+            ,"phases":
+                [
+                {"name": "Portlandite", "amount": 15.0 }
+            ]
+        }
+    ],
+
+
+    "ID_mapping":
+        [
+        {"Water": 0 },
+        {"Portlandite": 1 }
+    ],
+
+    "geometry":
+    {
+        "array":
+            [
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0,
+
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0
+        ]
+    },
+
+
+    "results":
+    {
+        "results_arrays_enabled":
+            [
+            "porosity",
+            "phases"
+        ]
+    }
+}
+
+

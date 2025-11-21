@@ -1,0 +1,250 @@
+! Kinetic database for TOUGHREACT
+! Data prepared and compiled by BRGM (French geological survey)
+! Created: 01/04/2014
+!
+! Users shall release, defend, hold harmless and indemnify BRGM against any and all claims, damages, expenses and losses and
+! the like which may arise out of the consultation and/or the use of the site and/or the data hereincluded that they would make
+! as well as of the interpretation of the latter. 
+!
+! This version is relatively untested. Kindly send comments or corrections to 
+! Arnault Lassin (a.lassin@brgm.fr) or Nicolas Marty (n.marty@brgm.fr)
+!
+!
+'Albite'   1  1  0  0
+     5.1E-20  2  100  0.48  57  0  0  0
+     2
+     8.5E-11  58  1  'H+'  0.34
+     1.4E-10  56  1  'OH-'  0.32
+! kinetic data for dissolution extracted from 06hel/tis 93bur/nag 97ale/med 94hel 84cho/wol 85cho/wol 95kna/cop
+'Biotite'   1  1  0  0
+     2.3E-12  2  1  1  49  0  0  0
+     2
+     1.1E-9  49  1  'H+'  0.67
+     9.1E-8  49  1  'OH-'  0.79
+! kinetic data for dissolution extracted from 97mal/ban 96mal/ban 96kal/sch 92ack/bri 06hod 96clo/dre 00tay/blu 93swo/dre 08mcm/smi
+'Celestite'   1  3  0  0
+     2.2E-8  2  2.06  0.49  34  0  0  0
+     1
+     1.4E-6  33  1  'H+'  0.10
+     5.1E-8  0  2  0.5  34  0  0  0  1e-6  0
+     0.0  0.0  0.0
+! kinetic data for dissolution extracted from 95dov/cza 08bos/hu
+! kinetic data for precipitation extracted from 10Ham/Ham
+'Calcite'   1  3  0  0
+     1.6E-6  2  1  1  24  0  0  0
+     1
+     5.0E-1  14  1  'H+'  1
+     1.8E-7  2  2  0.5  66  0  0  0  1e-6  0
+     1
+     1.9E-3  67  1  'HCO3-'  1.63
+     0.0  0.0  0.0
+! kinetic data for dissolution extracted from 04pal/kha
+! kinetic data for precipitation extracted from 07lio/par 98zha/gra 85ins/blo 95shi/bra 92rom/gro 98zah/daw 98leb/sua
+'Chlorite'   1  1  0  0
+     6.4E-17  2  1  1  16  0  0  0
+     2
+     8.2E-9  17  1  'H+'  0.28
+     6.9E-9  16  1  'OH-'  0.34
+! kinetic data for dissolution extracted from 05low/com 07low/bro 03gus/pui 03bra/bos
+! warning: kinetic constants normalised with 0.2% BET!
+'C-S-H'   1  3  0  0
+     1.6E-18  2  1  1  23  0  0  0
+     1
+     5.9E-8  23  1  'H+'  0.28
+     1.0e-20  2  0.05  8.89  23  0  0  0  1e-6  0
+     1
+     4.1E+44  23  1  'H+'  5.06
+     0.0  0.0  0.0
+! kinetic data for dissolution extracted from 99sch
+! kinetic data for precipitation extracted from 04bau/kel 
+'Cristobalite'   1  3  0  0
+     6.4E-14  2  1  1  69  0  0  0
+     1
+     1.9E-10  69  1  'OH-'  0.34
+     3.2E-12  0  0.54  4.58  53  0  0  0  1e-6  0
+     0.0  0.0  0.0
+! kinetic data for dissolution extracted from quartz model and 95ren/gam
+! kinetic data for precipitation extracted from 05gan/hus 80rim/bar 95ren/gam
+'Dolomite'   1  3  0  0
+     1.1E-8  2  2.1  0.16  31  0  0  0
+     1
+     2.8E-4  46  1  'H+'  0.61
+     9.5E-15  0  1  1  103  0  0  0  1e-6  0
+     0.0  0.0  0.0
+! kinetic data for dissolution extracted from 05pok/gol 07gau/sch 99gau/oel 09pok/gol 82bus/plu
+! kinetic data for precipitation extracted from 97arv/mac 99arv/mac
+'Gibbsite'   1  3  0  0
+    0  2  1  1  0  0  0  0
+    1
+    3.1E-6  48   1  'OH-'  1.0
+    0  2  1  1  0  0  0  0  1.e-6  0
+    1
+    3.1E-6  0   1  'OH-'  1.0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 92nag/las 93nag/las 08ben/pal
+! kinetic data for precipitation extracted from 92nag/las 93nag/las 08ben/pal
+'Illite'   1  3  0  0
+    3.3E-17  2  1  1 35  0  0  0
+    2
+    9.8E-12  36  1  'H+'  0.52
+    3.1E-12  48  1  'OH-' 0.38
+    6.2E-14  0  1.68  0.06  66  0  0  0  1e-6  0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 06has/vil 03tou/nea 03koh/duf 05koh/bos
+! kinetic data for precipitation extracted from Kaolinite precipitation rate: 08yan/ste 93nag/las 97dev/sch
+'Kaolinite'   1  3  0  0
+    1.1E-14  2  1  1 38  0  0  0
+    2
+    7.5E-12  43  1  'H+'  0.51
+    2.5E-11  46  1  'OH-' 0.58
+    5.5E-13  0  1.68  0.06  66  0  0  0  1e-6  0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 90car/wal 98bau/ber 02cam/gan 95car/wal 90chi/mil 97dev/sch 95gan/lui 01met/gan 08yan/ste 99hue/cho
+! kinetic data for precipitation extracted from 08yan/ste 93nag/las 97dev/sch
+'Microcline'              1    1    0    0
+    1.0E-14  2  2.35  0.09  31  0  0  0
+    2
+    1.7E-11  31  1  'H+'  0.27
+    1.4E-10  31  1  'OH-' 0.35
+! kinetic data for dissolution extracted from 95kna/cop 02hee/lun 95sti/bran
+'Portlandite'  1  1  0  0
+    2.2E-8  2  1  1 75  0  0  0
+    1
+    8.0E-4  75  1  'H+'  0.60
+! kinetic data for dissolution extracted from 01gal/ayo 05hal/sho 09reg/lag
+'Quartz'                  1    3    0    0
+    6.4E-14  2  1  1  77  0  0  0
+    1
+    1.9E-10  80  1  'OH-'  0.34
+    3.2E-12   0  0.54  4.58  50  0  0  0  1e-6  0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 95kna/cop 88kna/wol 06bic/nag 91ben 88ben/mel 90cas/las 87sch/wal 90bra/wal 00ice/dov 90dov/cre 99dov 94dov 92hou/orr 90blu/yun
+! kinetic data for precipitation extracted from 05gan/hus 80rim/bar
+'smectite'   1  3  0  0
+    9.3E-15  2  10.34  0.17  63  0  0  0
+    2
+    5.3E-11  54   1  'H+'  0.69
+    2.9E-12  61   1  'OH-'  0.34
+    2.2E-13  0  1.68  0.06  66  0  0  0  1e-6  0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 06has/vil 03tou/nea 05yok/kur 01hue/cab 04nak/sak 98bau/ber 00cam/gan 96zys/sch 06gol/bau 05met/amr 05amr/gan 00bos/cha 08roz/hue 09roz/hue
+! kinetic data for precipitation extracted from Kaolinite precipitation rate: 08yan/ste 93nag/las 97dev/sch
+'siderite'   1  3  0  0
+    2.1E-9  2  1  1  56  0  0  0
+    1
+    5.9E-6  56  1  'H+'  0.60
+    1.6E-11  0  1  1  108  0  0  0  1e-6  0
+    0.0  0.0  0.0
+! kinetic data for dissolution extracted from 04duc/mar 11tan/mar 09gol/ben 02pok/sch 86bie/hou 03kop/hom 09tes/duf
+! kinetic data for precipitation extracted from 04jim/rom 92gre/tom
+'pyrite'   1  1  0  0
+    0  2  1  1  0  0  0  0
+    2
+    7.7E-7   62    2   'Fe3+'  0.50 'H+'  -0.25  
+    3.7E-9   57    2   'H+' -0.18 'O2(aq)' 0.50
+! kinetic data for dissolution extracted from 00hol/cru 86mcm/bar 94wil/rim
+!  
+! References
+! 00cam/gan: Jordi Cama, Jiwchar Ganor, Carles Ayora, C. Antonio Lasaga (2000). Smectite dissolution kinetics at 80°C and pH 8.8. Geochimica et Cosmochimica Acta, Volume 64, Issue 15, August 2000, Pages 2701-2717
+! 00hol/cru: Holmes, P.R., Crundwell, F.K., (2000). The kinetics of the oxidation of pyrite by ferric ions and dissolved oxygen: an electrochemical study. Geochimica et Cosmochimica Acta 64, 263-274.
+! 00ice/dov: Jonathan P. Icenhower, Patricia M. Dove (2000). The dissolution kinetics of amorphous silica into sodium chloride solutions: effects of temperature and ionic strength. Geochimica et Cosmochimica Acta, Volume 64, Issue 24, 15 December 2000, Pages 4193-4203
+! 00tay/blu: Aaron S. Taylor, Joel D. Blum, Antonio C. Lasaga, Ian N. MacInnis (2000). Kinetics of dissolution and Sr release during biotite and phlogopite weathering. Geochimica et Cosmochimica Acta, Volume 64, Issue 7, April 2000, Pages 1191-1208
+! 01gal/ayo: S. Galí, C. Ayora, P. Alfonso, E. Tauler, M. Labrador (2001). Kinetics of dolomite–portlandite reaction: Application to portland cement concrete. Cement and Concrete Research, Volume 31, Issue 6, May 2001, Pages 933-939
+! 01hue/cab: F. J. Huertas, E. Caballero, C. Jiménez de Cisneros, F. Huertas, J. Linares (2001). Kinetics of montmorillonite dissolution in granitic solutions. Applied Geochemistry, Volume 16, Issue 4, March 2001, Pages 397-407
+! 01met/gan: Volker Metz and Jiwchar Ganor (2001). Stirring effect on kaolinite dissolution rate. Geochimica et Cosmochimica Acta, Vol. 65, No. 20, pp. 3475–3490, 2001
+! 02cam/gan: J. Cama, V. Metz, J. Ganor (2002). The effect of pH and temperature on kaolinite dissolution rate under acidic conditions. Geochimica et Cosmochimica Acta, Vol. 66, No. 22, pp. 3913–3926, 2002
+! 02hee/lun: P. A. W. van Hees, U. S. Lundström, C. -M. Mörth (2002). Dissolution of microcline and labradorite in a forest O horizon extract: the effect of naturally occurring organic acids. Chemical Geology, Volume 189, Issues 3-4, 30 September 2002, Pages 199-211
+! 02pok/sch: Pokrovsky O.S., Schott J., (2002). Surface Chemistry and Dissolution Kinetics of Divalent Metal Carbonates. Environ. Sci. Technol., 36, 426-432.
+! 03bra/bos: Felix Brandt, Dirk Bosbach, Evelyn Krawczyk-Bärsch, Thuro Arnold, Gert Bernhard (2003). Chlorite dissolution in the acid ph-range: a combined microscopic and macroscopic approach. Geochimica et Cosmochimica Acta, Volume 67, Issue 8, 15 April 2003, Pages 1451-1461
+! 03gus/pui: Åsa B. Gustafsson and Ignasi Puigdomenech (2003). The effect of pH on chlorite dissolution rates at 25°C. Materials Reasearch Society Symposium, 2003, Number 757, pp. 649-655
+! 03koh/duf: Stephan J. Köhler, Fabien Dufaud, Eric H. Oelkers (2003). An experimental study of illite dissolution kinetics as a function of ph from 1.4 to 12.4 and temperature from 5 to 50°C. Geochimica et Cosmochimica Acta, Volume 67, Issue 19, 1 October 2003, Pages 3583-3594
+! 03kop/hum: Kopp, R.E., Humayun, M., (2003). Kinetic model of carbonate dissolution in Martian meteorite ALH84001. Geochimica et Cosmochimica Acta, Vol. 67, No. 17, 3247–3256.
+! 03tou/nea: Tournassat, C., Neaman, A., Villiéras, F., Bosbach, D., and Charlet, L. (2003). Nanomorphology of montmorillonite particles: Estimation of the clay edge sorption site density by low-pressure gas adsorption and AFM observations. American Mineralogist; November-December 2003; v. 88; no. 11-12; p. 1989-1995
+! 04bau/kel: Isabel Baur, Peter Keller, Denis Mavrocordatos, Bernhard Wehrli, C. Annette Johnson (2004). Dissolution-precipitation behaviour of ettringite, monosulfate, and calcium silicate hydrate. Cement and Concrete Research, Volume 34, Issue 2, February 2004, Pages 341-348
+! 04duc/mar: Owen W Duckworth, Scot T Martin (2004). Role of molecular oxygen in the dissolution of siderite and rhodochrosite. Geochimica et Cosmochimica Acta, Volume 68, Issue 3, 1 February 2004, Pages 607-621
+! 04jim/rom: Concepción Jimenez-Lopez, Christopher S. Romanek (2004). Precipitation kinetics and carbon isotope partitioning of inorganic siderite at 25°C and 1 atm. Geochimica et Cosmochimica Acta, Volume 68, Issue 3, 1 February 2004, Pages 557-571
+! 04nak/sak: S. Nakayama, Y. Sakamoto, T. Yamaguchi, M. Akai, T. Tanaka, T. Sato, Y. Iida (2004).Dissolution of montmorillonite in compacted bentonite by highly alkaline aqueous solutions and diffusivity of hydroxide ions. Applied Clay Science, Volume 27, Issues 1-2, October 2004, Pages 53-65
+! 04pal/kha: Palandri, J.L., Kharaka, Y.K., (2004). A compilation of rate parameters of water-mineral interaction kinetics for application to geochemical modeling. U.S. Dept. of the Interior, U.S. Geological Survey, Menlo Park, Calif.
+! 05amr/gan: Keren Amram, Jiwchar Ganor (2005). The combined effect of pH and temperature on smectite dissolution rate under acidic conditions. Geochimica et Cosmochimica Acta, Volume 69, Issue 10, 15 May 2005, Pages 2535-2546
+! 05gan/hus: Jiwchar Ganor, Ted J. Huston, Lynn M. Walter (2005). Quartz precipitation kinetics at 180°C in NaCl solutions-Implications for the usability of the principle of detailed balancing. Geochimica et Cosmochimica Acta, Volume 69, Issue 8, 15 April 2005, Pages 2043-2056
+! 05hal/sho: Cheryl E. Halim, Stephen A. Short, Jason A. Scott, Rose Amal, Gary Low (2005). Modelling the leaching of Pb, Cd, As, and Cr from cementitious waste using PHREEQC. Journal of Hazardous Materials, Volume 125, Issues 1-3, 17 October 2005, Pages 45-61
+! 05koh/bos: Stephan J. Köhler, Dirk Bosbach, Eric H. Oelkers (2005). Do clay mineral dissolution rates reach steady state? Geochimica et Cosmochimica Acta, Volume 69, Issue 8, 15 April 2005, Pages 1997-2006
+! 05liu/yu: Shengwei Liu, Jiaguo Yu, Bei Cheng, Li Zhao, Qingjie Zhang (2005). Facile fabrication of monodispersed mesoporous celestine particles with peanut-shaped morphology. Journal of Crystal Growth, Volume 279, Issues 3-4, 1 June 2005, Pages 461-465
+! 05low/com: Richard T. Lowson, M.-C. Josick Comarmond, Geetha Rajaratnam, Paul L. Brown (2005).The kinetics of the dissolution of chlorite as a function of pH and at 25°C. Geochimica et Cosmochimica Acta, Volume 69, Issue 7, 1 April 2005, Pages 1687-1699
+! 05met/amr: Volker Metz, Keren Amram, Jiwchar Ganor (2005). Stoichiometry of smectite dissolution reaction. Geochimica et Cosmochimica Acta, Volume 69, Issue 7, 1 April 2005, Pages 1755-1772
+! 05pok/gol: Oleg S. Pokrovsky, Sergey V. Golubev, Jacques Schott (2005). Dissolution kinetics of calcite, dolomite and magnesite at 25 °C and 0 to 50 atm pCO2. Chemical Geology, Volume 217, Issues 3-4, 25 April 2005, Pages 239-255
+! 05yok/kur: Yokoyama, S., Kuroda, M., Sato, T. (2005). Atomic Force Microscopy study of montmorillonite dissolution under highly alkaline conditions. Clays and Clay Minerals; April 2005; v. 53; no. 2; p. 147-154
+! 06bic/nag: Barry R. Bickmore, Kathryn L. Nagy, Amy K. Gray, A. Riley Brinkerhoff (2006). The effect of Al(OH)4- on the dissolution rate of quartz. Geochimica et Cosmochimica Acta, Volume 70, Issue 2, 15 January 2006, Pages 290-305
+! 06gol/bau: Sergey V. Golubev, Andreas Bauer, Oleg S. Pokrovsky (2006). Effect of pH and organic ligands on the kinetics of smectite dissolution at 25 °C. Geochimica et Cosmochimica Acta, Volume 70, Issue 17, 1 September 2006, Pages 4436-4451
+! 06has/vil: Malak Sayed Hassan, Frédéric Villieras, Fabien Gaboriaud, Angelina Razafitianamaharavo (2006). AFM and low-pressure argon adsorption analysis of geometrical properties of phyllosilicates. Journal of Colloid and Interface Science, Volume 296, Issue 2, 15 April 2006, Pages 614-623
+! 06hel/tis: Roland Hellmann, Delphine Tisserand (2006). Dissolution kinetics as a function of the Gibbs free energy of reaction: An experimental study based on albite feldspar. Geochimica et Cosmochimica Acta, Volume 70, Issue 2, 15 January 2006, Pages 364-383
+! 06hod: Mark E. Hodson (2006). Does reactive surface area depend on grain size? Results from pH 3, 25 °C far-from-equilibrium flow-through dissolution experiments on anorthite and biotite. Geochimica et Cosmochimica Acta, Volume 70, Issue 7, 1 April 2006, Pages 1655-1667
+! 07gau/sch: Maud Gautelier, Jacques Schott, Eric H. Oelkers (2007). An experimental study of dolomite dissolution rates at 80 °C as a function of chemical affinity and solution composition. Chemical Geology, Volume 242, Issues 3-4, 15 August 2007, Pages 509-517
+! 07lio/par: Maria G. Lioliou, Christakis A. Paraskeva, Petros G. Koutsoukos, Alkiviades C. Payatakes (2007). Heterogeneous nucleation and growth of calcium carbonate on calcite and quartz. Journal of Colloid and Interface Science, Volume 308, Issue 2, 15 April 2007, Pages 421-428
+! 07low/bro: Richard T. Lowson, Paul L. Brown, M.-C. Josick Comarmond, Geetha Rajaratnam (2007). The kinetics of chlorite dissolution. Geochimica et Cosmochimica Acta, Volume 71, Issue 6, 15 March 2007, Pages 1431-1447
+! 08ben/pal: Pascale Bénézeth, Donald A. Palmer, David J. Wesolowski (2008). Dissolution/precipitation kinetics of boehmite and gibbsite: Application of a pH-relaxation technique to study near-equilibrium rates. Geochimica et Cosmochimica Acta, Volume 72, Issue 10, 15 May 2008, Pages 2429-2453.
+! 08bos/hu: Sweta Bose, Xiaoming Hu, Steven R. Higgins (2008). Dissolution kinetics and topographic relaxation on celestite (0 0 1) surfaces: The effect of solution saturation state studied using Atomic Force Microscopy. Geochimica et Cosmochimica Acta, Volume 72, Issue 3, 1 February 2008, Pages 759-770
+! 08mcm/smi: T. J. McMaster, M. M. Smits, S. J. Haward, J. R. Leake, S. Banwart, K. V. Ragnarsdottir (2008). High-resolution imaging of biotite dissolution and measurement of activation energy. Mineralogical Magazine; February 2008; v. 72; no. 1; p. 115-120; DOI: 10.1180/minmag.2008.072.1.115
+! 08roz/hue: M. Luisa Rozalén, F. Javier Huertas, Patrick V. Brady, Jordi Cama, Susana García-Palma, José Linares (2008). Experimental study of the effect of pH on the kinetics of montmorillonite dissolution at 25 °C. Geochimica et Cosmochimica Acta, Volume 72, Issue 17, 1 September 2008, Pages 4224-4253
+! 08yan/ste: Li Yang, Carl I. Steefel (2008). Kaolinite dissolution and precipitation kinetics at 22 °C and pH 4. Geochimica et Cosmochimica Acta, Volume 72, Issue 1, 1 January 2008, Pages 99-116
+! 09gol/ben: S.V. Golubev, P. Bénézeth , J. Schott, J.L. Dandurand, A. Castillo. (2009). Siderite dissolution kinetics in acidic aqueous solutions from 25 to 100 °C and 0 to 50 atm pCO2.Chemical Geology 265 (2009) 13–19
+! 09pok/gol: Oleg S. Pokrovsky, Sergey V. Golubev, Jacques Schott, Alain Castillo (2009). Calcite, dolomite and magnesite dissolution kinetics in aqueous solutions at acid to circumneutral pH, 25 to 150°C and 1 to 55 atm pCO2: New constraints on CO2 sequestration in sedimentary basins. Chemical Geology,Volume 265, Issues 1-2, 15 July 2009, Pages 20-32
+! 09reg/lag: Olivier Regnault, Vincent Lagneau, Hélène Schneider (2009). Experimental measurement of portlandite carbonation kinetics with supercritical CO2. Chemical Geology, Volume 265, Issues 1-2, 15 July 2009, Pages 113-121
+! 09roz/hue: Marisa Rozalen, F. Javier Huertas, Patrick V. Brady (2009). Experimental study of the effect of pH and temperature on the kinetics of montmorillonite dissolution. Geochimica et Cosmochimica Acta, Volume 73, Issue 13, 1 July 2009, Pages 3752-3766
+! 09tef/duf: Testemale D., Dufaud F., Martinez I., Bénézeth P., Hazemann J.-L., Schott J., Guyot F., (2009). An X-ray absorption study of the dissolution of siderite at 300 bar between 50 °C and 100 °C. Chemical Geology 259, 8–16
+! 10Ham/Ham: Hamdona S.K.,  Hamza S.M., Mangood A.H. (2010). Influence of polyphosphonates on the precipitation of strontium sulfate (Celestite) from aqueous solutions. Desalination and water treatment 2010, vol. 24, no1-3, pp. 55-60 
+! 10nta/kou: E. Ntafalias and P. G. Koutsoukos (2010). Spontaneous precipitation of calcium silicate hydrate in aqueous solutions. Cryst. Res. Technol. 45, No. 1, 39-47
+! 11tan/mar: Yuanzhi Tang, Scot T. Martin (2011). Siderite dissolution in the presence of chromate. Geochimica et Cosmochimica Acta 75 (2011) 4951–4962
+! 80rim/bar: J.D. Rimstidt, H.L. Barnes (1980). The kinetics of silica-water reactions. Geochimica et Cosmochimica Acta, Volume 44, Issue 11, November 1980, Pages 1683-1699
+! 82bus/plu: Eurybiades Busenberg, and L. Niel Plummer (1982). The kinetics of dissolution of dolomite in CO2 -H2O systems at 1.5 to 65 degrees C and O to 1 atm PCO2. American Journal of Science, Vol. 282, January 1982, P.45-78 
+! 84cho/wol: Lei Chou, Roland Wollast (1984). Study of the weathering of albite at room temperature and pressure with a fluidized bed reactor. Geochimica et Cosmochimica Acta, Volume 48, Issue 11, November 1984, Pages 2205-2217
+! 85cho/wol: Lei Chou, and Roland Wollast (1985). Steady-state kinetics and dissolution mechanisms of albite. American Journal of Science, Volume 285, December 1985, Pages 963-993
+! 85ins/blo: William P. Inskeep, Paul R. Bloom. (1985). An evaluation of rate equations for calcite precipitation kinetics at pCO2 less than 0.01 atm and pH greater than 8. Geochimica et Cosmochimica Acta, Volume 49, Issue 10, October 1985, Pages 2165-2180
+! 86bie/hou: Biegler, C., Houchin M.R., (1986). Siderite (FeCO,): Its Dissolution and Interaction with Stannic Oxide in Aqueous Suspensions. Colloids and Surfaces, 21, 267-278.
+! 86mcm/bar: McKibben, M.A., Barnes, H.L., (1986). Oxidation of pyrite in low temperature acidic solutions: Rate laws and surface textures. Geochimica et Cosmochimica Acta 50, 1509-1520. 
+! 87sch/wal: Jacques Schwartzentruber, Walter Fürst, H. Renon (1987). Dissolution of quartz into dilute alkaline solutions at 90°C: A kinetic study. Geochimica et Cosmochimica Acta, Volume 51, Issue 7, July 1987, Pages 1867-1874
+! 88ben/mel: P.C. Bennett, M.E. Melcer, D.I. Siegel, J.P. Hassett (1988). The dissolution of quartz in dilute aqueous solutions of organic acids at 25°C. Geochimica et Cosmochimica Acta, Volume 52, Issue 6, June 1988, Pages 1521-1530
+! 88kna/wol: Kevin G. Knauss, Thomas J. Wolery (1988). The dissolution kinetics of quartz as a function of pH and time at 70°C. Geochimica et Cosmochimica Acta, Volume 52, Issue 1, January 1988, Pages 43-53
+! 90blu/yun: Alex E Blum, Richard A Yund, Antonio C Lasaga (1990). The effect of dislocation density on the dissolution rate of quartz. Geochimica et Cosmochimica Acta, Volume 54, Issue 2, February 1990, Pages 283-297
+! 90bra/wal: Patrick V. Brady, John V. Walther (1990). Kinetics of quartz dissolution at low temperatures. Chemical Geology, Volume 82, 1990, Pages 253-264
+! 90car/wal: S.A. Carroll, J.V. Walther (1990). Kaolinite  dissolution at 25°C, 60°C, and 80°C. American Journal of Sciences, 290, september 1990, 797-810
+! 90cas/las: Wlliam H Casey, Antonio C Lasaga, G.V Gibbs (1990). Mechanisms of silica dissolution as inferred from the kinetic isotope effect. Geochimica et Cosmochimica Acta, Volume 54, Issue 12, December 1990, Pages 3369-3378
+! 90chi/mil: Pao-Kuo F. Chin and Gary L. Mills (1990). Kinetics and mechanisms of kaolinite dissolution: effects of organic ligands. Chemical Geology, 90 (1991) 307-317
+! 90dov/cre: Patricia M. Dove, David A. Crerar (1990). Kinetics of quartz dissolution in electrolyte solutions using a hydrothermal mixed flow reactor. Geochimica et Cosmochimica Acta, Volume 54, Issue 4, April 1990, Pages 955-969
+! 91ben: Philip C. Bennett (1991). Quartz dissolution in organic-rich aqueous systems. Geochimica et Cosmochimica Acta, Volume 55, Issue 7, July 1991, Pages 1781-1797
+! 92ack/bri: James G Acker, Owen P Bricker (92). The influence of pH on biotite dissolution and alteration kinetics at low temperature. Geochimica et Cosmochimica Acta, Volume 56, Issue 8, August 1992, Pages 3073-3092
+! 92gre/tom: Janet Greenberg, Mason Tomson (1992). Precipitation and dissolution kinetics and equilibria of aqueous ferrous carbonate vs temperature. Applied Geochemistry, Volume 7, Issue 2, March 1992, Pages 185-190
+! 92hou/orr: William A. House, Douglas R. Orr (1992). Investigation of the pH dependence of the kinetics of quartz dissolution at 25 °C. Journal of the Chemical Society, Faraday Transactions, Volume 88, Pages 233-241 in Patricia M. Dove (1994). The dissoution kinetics of quartz in sodium chloride solutions at 25°C to 300°C. American Journal of Science, volume 294, June 1994, Pages 665-712
+! 92nag/las: K.L Nagy, A.C Lasaga (1992). Dissolution and precipitation kinetics of gibbsite at 80°C and pH 3: The dependence on solution saturation state. Geochimica et Cosmochimica Acta, Volume 56, Issue 8, August 1992, Pages 3093-3111
+! 92rom/gro: Christopher S Romanek, Ethan L Grossman, John W Morse (1992). Carbon isotopic fractionation in synthetic aragonite and calcite: Effects of temperature and precipitation rate. Geochimica et Cosmochimica Acta, Volume 56, Issue 1, January 1992, Pages 419-430
+! 93bur/nag: T.E. Burch, K.L. Nagy, A.C. Lasaga (1993). Free energy dependence of albite dissolution kinetics at 80°C and pH 8.8. Chemical Geology, Volume 105, Issues 1-3, 15 March 1993, Pages 137-162
+! 93nag/las: Kathryn L Nagy, Antonio C Lasaga (1993). Simultaneous precipitation kinetics of kaolinite and gibbsite at 80°C and pH 3. Geochimica et Cosmochimica Acta, Volume 57, Issue 17, September 1993, Pages 4329-4335
+! 93swo/dre: Norbert G. Swoboda-Colberg, James I. Drever (1993). Mineral dissolution rates in plot-scale field and laboratory experiments. Chemical Geology, Volume 105, Issues 1-3, 15 March 1993, Pages 51-69
+! 94dov: Patricia M. Dove (1994). The dissoution kinetics of quartz in sodium chloride solutions at 25°C to 300°C. American Journal of Science, volume 294, June 1994, Pages 665-712
+! 94gau/oel: Jean-Marie Gautier, Eric H Oelkers, Jacques Schott (1994). Experimental study of K-feldspar dissolution rates as a function of chemical affinity at 150°C and pH 9. Geochimica et Cosmochimica Acta, Volume 58, Issue 21, November 1994, Pages 4549-4560
+! 94hel: Roland Hellmann (1994). The albite-water system: Part I. The kinetics of dissolution as a function of pH at 100, 200 and 300°C. Geochimica et Cosmochimica Acta, Volume 58, Issue 2, January 1994, Pages 595-611
+! 94wil/rim: Williamson, M.A., Rimstidt, J.D., (1994). The kinetics and electrochemical rate-determining step of aqueous pyrite oxidation. Geochimica et Cosmochimica Acta 58, 5443-5454.
+! 95car/wal: Susan A. Carroll-Webb and John V. Walther (1995). A surface complex reaction model for the pH-dependence of corundum and kaolinite dissolution rates. Geochimica et Cosmochimica Acta Vol. 52. 1995 pp. 2609-2623
+! 95dov/cza: Patricia M. Dove, Carol A. Czank (1995). Crystal chemical controls on the dissolution kinetics of the isostructural sulfates: Celestite, anglesite, and barite. Geochimica et Cosmochimica Acta, Volume 59, Issue 10, May 1995, Pages 1907-1915
+! 95gan/lui: Ganor Jiwchar, Mogollon Jose Luis, Lasaga Antonio C. (1995). The effect of pH on kaolinite dissolution rates and on activation energy. Geochimica et Cosmochimica Acta Vol. 59, Issue 6, Pages 1037-1052
+! 95kna/cop: Kevin G. Knauss, Sally A. Copenhaver (1995). The effect of malonate on the dissolution kinetics of albite, quartz, and microcline as a function of pH at 70°C. Applied Geochemistry, Volume 10, Issue 1, January 1995, Pages 17-33
+! 95ren/gam: Renders, P.J.N., Gammons, C.H., and Barnes H.L., (1995). Precipitation and dissolution rate constants for cristobalite from 150 to 300°C. Geochim. Cosmochim. Acta 59, 77-85.
+! 95shi/bra: Ryoji Shiraki, Susan L. Brantley (1995). Kinetics of near-equilibrium calcite precipitation at 100°C: An evaluation of elementary reaction-based and affinity-based rate laws. Geochimica et Cosmochimica Acta, Volume 59, Issue 8, April 1995, Pages 1457-1471
+! 95sti/bran: Lisa L. Stillings, Susan L. Brantley (1995). Feldspar dissolution at 25°C and pH 3: Reaction stoichiometry and the effect of cations. Geochimica et Cosmochimica Acta, Volume 59, Issue 8, April 1995, Pages 1483-1496
+! 96clo/dre: D.W. Clow, J.I. Drever (1996). Weathering rates as a function of flow through an alpine soil. Chemical Geology, Volume 132, Issues 1-4, 30 October 1996, Pages 131-141
+! 96kal/sch: Birgitta E. Kalinowski, Peter Schweda (1996). Kinetics of muscovite, phlogopite, and biotite dissolution and alteration at pH 1–4, room temperature. Geochimica et Cosmochimica Acta, Volume 60, Issue 3, February 1996, Pages 367-385
+! 96mal/ban: Maria Malmström, Steven Banwart, Jeanette Lewenhagen, Lara Duro, Jordi Bruno (96).The dissolution of biotite and chlorite at 25°C in the near-neutral pH region. Journal of Contaminant Hydrology, Volume 21, Issues 1-4, February 1996, Pages 201-213
+! 96zys/sch: Martin Zysset, Paul W. Schindler (1996). The proton promoted dissolution kinetics of K-montmorillonite. Geochimica et Cosmochimica Acta, Volume 60, Issue 6, March 1996, Pages 921-931
+! 97ale/med: Victor A. Alekseyev, Ludmila S. Medvedeva, Nina I. Prisyagina, Sergey S. Meshalkin, Aleksey I. Balabin (1997). Change in the dissolution rates of alkali feldspars as a result of secondary mineral precipitation and approach to equilibrium. Geochimica et Cosmochimica Acta, Volume 61, Issue 6, March 1997, Pages 1125-1142
+! 97arv/mac: Arvidson, Rolf S., Mackenzie, Fred T. (1997). Tentative kinetic model for dolomite precipitation rate and its application to dolomite distribution. Aquatic Geochemistry, Vol. 2, 1997, pages 273-298
+! 97dev/sch: Jean-Luc Devidal, Jacques Schott, Jean-Louis Dandurand (1997). An experimental study of kaolinite dissolution and precipitation kinetics as a function of chemical affinity and solution composition at 150°C, 40 bars, and pH 2, 6.8, and 7.8. Geochimica et Cosmochimica Acta, Volume 61, Issue 24, December 1997, Pages 5165-5186
+! 97mal/ban: Maria Malmström, Steven Banwart (1997). Biotite dissolution at 25°C: The pH dependence of dissolution rate and stoichiometry. Geochimica et Cosmochimica Acta, Volume 61, Issue 14, July 1997, Pages 2779-2799
+! 98bau/ber: Andreas Bauer, Gilles Berger (1998). Kaolinite and smectite dissolution rate in high molar KOH solutions at 35° and 80°C.Applied Geochemistry, Volume 13, Issue 7, September 1998, Pages 905-916
+! 98leb/sua: I. Lebron, D. L. Suárez (1998). Kinetics and mechanisms of precipitation of calcite as affected by PCO2 and organic ligands at 25°C. Geochimica et Cosmochimica Acta, Volume 62, Issue 3, February 1998, Pages 405-416
+! 98zha/daw: Yuping Zhang, Richard Dawe (1998). The kinetics of calcite precipitation from a high salinity water. Applied Geochemistry, Volume 13, Issue 2, March 1998, Pages 177-184
+! 98zha/gra: Yuping Zhang, Carlos A. Grattoni (1998). Comment on “Precipitation kinetics of calcite in the system CaCO3-H2O-CO2: the conversion to CO2 by the slow process H+ + HCO3- ? CO2 + H2O as a rate limiting step” by W. Dreybrodt, L. Eisenlohr, B. Madry, and S. Ringer. Geochimica et Cosmochimica Acta, Volume 62, Issues 23-24, December 1998, Pages 3789-3790
+! 99arv/mac: Arvidson, Rolf S., Mackenzie, Fred T. (1999). The dolomite problem; control of precipitation kinetics by temperature and saturation state. American Journal of Science, Vol. 299, April, 1999, pages 257-288
+! 99dov: Patricia M. Dove (1999). The dissolution kinetics of quartz in aqueous mixed cation solutions. Geochimica et Cosmochimica Acta, Volume 63, Issue 22, November 1999, Pages 3715-3727
+! 99gau/oel: Maud Gautelier, Eric H. Oelkers, Jacques Schott (1999). An experimental study of dolomite dissolution rates as a function of pH from -0.5 to 5 and temperature from 25 to 80°C. Chemical Geology, Volume 157, Issues 1-2, 3 May 1999, Pages 13-26
+! 99hue/cho: F. Javier Huertas, Lei Chou and Roland Wollast (1999). Mechanism of kaolinite dissolution at room temperature and pressure Part II: Kinetic study. Geochimica et Cosmochimica Acta, Vol. 63, No. 19/20, pp. 3261–3275, 1999
+! 99sch: Christa R. Schweizer (1999). Calciumsilikathydrat-Mineralien. Lösungskinetik und ihr Einfluss auf das Auswaschverhalten von Substanzen aus einer Ablagerung mit Rückständen aus Müllverbrennungsanlagen. PhD thesis,  dipl. Chem. Universität Basel, Zürich und Dübendorf 1999

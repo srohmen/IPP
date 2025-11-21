@@ -1,0 +1,15 @@
+#ifndef LATTICEBOLTZMANNCOLLISIONTYPE_H
+#define LATTICEBOLTZMANNCOLLISIONTYPE_H
+
+namespace IPP
+{
+
+enum LatticeBoltzmannCollisionType
+{
+    LBCT_DVSRT,
+    LBCT_PTRT
+};
+
+}
+
+#endif // LATTICEBOLTZMANNCOLLISIONTYPE_H

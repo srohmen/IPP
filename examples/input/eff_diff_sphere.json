@@ -1,0 +1,123 @@
+{
+    "maxIter": 1.0E+9,
+    "outputFrequency": 1000,
+//    "checkpointingTime": 0, // minutes calc time
+    "enable_chemistry": false,
+
+    "diff_coef_reference": 1.0E-9, // m2/s    
+    "LBCollType": "PTRT",
+    "tau_reference": 1.0,
+    "porosity_reference": 1.0,
+    "porosity_low": 0.65,
+
+
+    "dimensions":
+    {
+        "dims": [ 201, 201, 201 ],
+        "offset": [ 0.0, 0.0, 0.0 ],
+        "spatial_resolution": 0.005,
+
+        "boundary_conditions":
+        {
+            "periodic": [true, false, true]
+        }
+    },
+    "database": "cemdata07_CSH_emul.dat",
+    "database_extension": "molar_volumes.json",
+
+
+    "multiscale_func":
+    {
+        "type": "archies",
+
+        "free_pore_diff_coef": 1.0E-9,
+        "expo": 2,
+
+
+        "phases":
+            [
+
+            "CSH_083",
+            "CSH_092",
+            "CSH_100",
+            "CSH_108",
+            "CSH_117",
+            "CSH_125",
+            "CSH_133",
+            "CSH_142",
+            "CSH_150",
+            "CSH_158",
+            "CSH_167"
+
+        ]
+    },
+
+
+    "compositions":
+        [
+
+
+        // pore water
+        {
+            "name": "Background",
+            "units": "mol/L"
+
+            ,"element_concentrations":
+                [
+                {"name": "Ca", "conc": 1.0E-2 },
+                {"name": "Si", "conc": 1.0E-5 }
+            ]
+
+            ,"phases":
+                [
+                {"name": "CSH_125", "amount": 4.5}
+            ]
+        },
+
+
+        {
+            "name": "OBSTACLE",
+            "units": "mol/kgw",
+            "inert_fraction": 1.0
+
+        }
+
+    ],
+
+
+
+
+    "ID_mapping":
+        [
+        {"Background": 0 },
+        {"OBSTACLE": 42 }
+    ],
+
+    "geometry":
+        {
+
+        "scale_passes": 0,
+
+        // "cemhyd_file": "input/sphere_big.geo"
+        "vtk_file": "input/sphere.vti"
+    },
+
+    "results":
+    {
+//        "results_arrays_enabled":
+//            [
+//            "diff_transport_scalar",
+//            "porosity"
+//        ],
+
+        "diff_eff":
+            [
+            { "dim": 1, "tracer_name": "Z_tracer_y"}
+        ]
+    }
+
+
+}
+
+
+

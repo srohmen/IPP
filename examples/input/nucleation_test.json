@@ -1,0 +1,591 @@
+{
+    "maxIter": 10000000, // maximum number of iterations steps
+    "checkpointingFreq": 1000,
+    "outputFrequency": 1000, // frequency of writing outfile files
+
+
+    "LBCollType": "PTRT",
+    "diff_coef_reference": 5.0E-10, // m2/s
+    "tau_reference": 1.0,
+    "porosity_reference": 1.0,
+    "porosity_low": 0.15,
+
+    "enable_chemistry": true,
+    "chemistry_tolerance": 1.0E-2,
+
+    "dimensions": // section for model size + boundary conditions
+    {
+        "dims": [ 101, 3],
+        "offset": [ 0.0, 0.0, 0.0 ], // offset vector to lower left bottom achor point
+        "spatial_resolution": 3e-8, // real world cell size
+
+        "boundary_conditions":
+        {
+            "periodic": [false, true],
+
+            "domains":
+                [
+
+                {
+                    "name": "left_outlet",
+                    "position": "left",
+                    "range": [0, 1000]
+                },
+
+                {
+                    "name": "right_outlet",
+                    "position": "right",
+                    "range": [0, 1000]
+                }
+
+            ]
+
+            ,"diffusive":
+                [
+                {
+                    "domain": "left_outlet",
+                    "type": "constant",
+                    "composition": "GraniteWater"
+                }
+            ]
+        }
+    },
+
+    "database": "ThermoChimie_PHREEQC_eDH_v9b0_USFD.dat",
+
+    "database_extension": "molar_volumes.json",
+
+    "phase_black_list":
+        [
+        "H2(g)",
+        "O2(g)",
+        "Ca(s)",
+        "H2O(g)",
+
+        "Al(s)",
+        "Amesite",
+        "Amesite-Fe",
+        "Antigorite",
+        "Aragonite",
+        "Artinite",
+        "Beidellite-Ca",
+        "Beidellite-Mg",
+        "Berthierine(FeII)",
+        "Berthierine_ISGS",
+        "Berthierine_Lorraine",
+        "Boehmite",
+        "C(cr)",
+        "CH4(g)",
+        "CO(g)",
+        "CO2(g)",
+        "Ca(SO3)(s)",
+        "Ca2Fe2O5(s)",
+        "CaCO3:H2O(s)",
+        "CaFe2O4(s)",
+        "CaMg3(CO3)4(s)",
+        "Chabazite",
+        "Chamosite",
+        "Clinochlore",
+        "Clinoptilolite_Ca",
+        "Cristobalite",
+        "Cronstedtite-Th",
+        "Diaspore",
+        "Dickite",
+        "Dolomite",
+        "Epsonite",
+        "Ettringite-Fe",
+        "Fayalite",
+        "Fe(OH)2(cr)",
+        "Fe(s)",
+        "FeAl2O4(s)",
+        "FeO(s)",
+        "FeS(am)",
+        "Ferrosilite",
+        "Gibbsite",
+        "Gismondine",
+        "Goethite",
+        "Greenalite",
+        "H2S(g)",
+        "HBeidellite-Ca",
+        "HBeidellite-Mg",
+        "HMontmorillonite-BCCa",
+        "HMontmorillonite-BCMg",
+        "HMontmorillonite-HCCa",
+        "HMontmorillonite-HCMg",
+        "HNontronite-Ca",
+        "HNontronite-Mg",
+        "HSaponite-Ca",
+        "HSaponite-FeCa",
+        "HSaponite-FeMg",
+        "HSaponite-Mg",
+        "HVermiculite-Ca",
+        "HVermiculite-Mg",
+        "Halloysite",
+        "Heulandite_Ca",
+        "Hexahydrite",
+        "Katoite",
+        "Lansfordite",
+        "Laumontite",
+        "Leonhardtite",
+        "Lepidocrocite",
+        "Lizardite",
+        "Mackinawite",
+        "Maghemite(disord)",
+        "Maghemite(ord)",
+        "Magnesite(nat)",
+        "Magnesite(syn)",
+        "Magnetite",
+        "Margarite",
+        "Melanterite",
+        "Mg(SO4)(s)",
+        "Mg(SO4):H2O(s)",
+        "Mg(cr)",
+        "Mg5(CO3)4(OH)2:4H2O(s)",
+        "Minnesotaite",
+        "Monosulfate-Fe",
+        "Montmorillonite-BCCa",
+        "Montmorillonite-BCMg",
+        "Montmorillonite-HCCa",
+        "Montmorillonite-HCMg",
+        "Mordenite_Ca",
+        "Nesquehonite",
+        "Nontronite-Ca",
+        "Nontronite-Mg",
+        "Pentahydrite",
+        "Periclase",
+        "Phillipsite_Ca",
+        "Pyrite",
+        "Pyrophyllite",
+        "Pyrrhotite",
+
+        "Ripidolite_Cca-2",
+        "S(cr)",
+        "SO2(g)",
+        "Saponite-Ca",
+        "Saponite-FeCa",
+        "Saponite-FeMg",
+        "Saponite-Mg",
+        "Scolecite",
+        "Si(cr)",
+        "Siderite",
+        "Stellerite",
+        "Sudoite",
+        "Talc",
+        "Troilite",
+        "Truscottite",
+        "Vaterite",
+        "Vermiculite-Ca",
+        "Vermiculite-Mg",
+        "Vermiculite_SO",
+        "Wairakite",
+        "Xonotlite",
+        "Zeolite_CaP",
+
+        "Afwillite",
+        "Anhydrite",
+        "Anorthite",
+        "Bassanite",
+        "Berthierine(FeIII)",
+        "Corundum",
+        "Foshagite",
+        "Gyrolite",
+        "Hematite",
+        "Hillebrandite",
+        "Jaffeite",
+        "Jennite",
+        "Kaolinite",
+        "Okenite",
+        "Tobermorite-11A",
+        "Tobermorite-14A",
+
+        "Acmite",
+        "Albite-high",
+        "Albite-low",
+        "Analcime",
+        "Annite",
+        "Arcanite",
+        "Beidellite-K",
+        "Beidellite-Na",
+        "Beidellite_SBld-1",
+        "Beidellite_SBld-1(4.576H2O)",
+        "Bloedite",
+        "Burkeite",
+        "Celadonite-Fe",
+        "Celadonite-Mg",
+        "Clinoptilolite_K",
+        "Clinoptilolite_Na",
+        "Dawsonite",
+        "Eastonite",
+
+        "Gaylussite",
+        "Glaserite",
+        "Glauberite",
+        "Glauconite",
+        "HBeidellite-K",
+        "HBeidellite-Na",
+        "HMontmorillonite-BCK",
+        "HMontmorillonite-BCNa",
+        "HMontmorillonite-HCK",
+        "HMontmorillonite-HCNa",
+        "HNontronite-K",
+        "HNontronite-Na",
+        "HSaponite-FeK",
+        "HSaponite-FeNa",
+        "HSaponite-K",
+        "HSaponite-Na",
+        "HVermiculite-K",
+        "HVermiculite-Na",
+        "Heulandite_Na",
+        "Illite-Al",
+        "Illite-FeII",
+        "Illite-Mg",
+        "Illite-Smec_ISCz-1(2.996H2O)",
+        "Illite/smectiteISCz-1",
+        "Illite_Imt-2",
+        "K(OH)(s)",
+        "K(cr)",
+        "K-carbonate",
+        "K-trona",
+        "K2CO3(cr)",
+        "K2O(s)",
+        "KAl(SO4)2(s)",
+        "KAl(SO4)2:12H2O(s)",
+        "Kalicinite",
+        "Leonite",
+        "Mercallite",
+        "Merlinoite_K",
+        "Merlinoite_Na",
+        "Microcline",
+        "Mirabilite",
+        "Montmorillonite-BCK",
+        "Montmorillonite-BCNa",
+        "Montmorillonite-HCK",
+        "Montmorillonite-HCNa",
+        "Mordenite_Oregon",
+        "Muscovite",
+        "Na(cr)",
+        "Na2(CO3)(cr)",
+        "Na2CO3:7H2O(s)",
+        "Na2O(cr)",
+        "Nahcolite",
+        "Natrolite",
+        "Natron",
+        "Nontronite-K",
+        "Nontronite-Na",
+        "Nontronite_Nau-2",
+        "Paragonite",
+        "Phillipsite_K",
+        "Phillipsite_Na",
+        "Phlogopite_K",
+        "Phlogopite_Na",
+        "Picromerite",
+        "Pirssonite",
+        "Polyhalite",
+        "Sanidine",
+        "Saponite-FeK",
+        "Saponite-FeNa",
+        "Saponite-K",
+        "Saponite-Na",
+        "Saponite_SapCa",
+        "Saponite_SapCa(4.151H2O)",
+        "Siderophyllite",
+        "SmectiteMX80",
+        "Smectite_MX80(3.989H2O)",
+        "Smectite_MX80(5.189H2O)",
+        "Stilbite",
+        "Syngenite",
+        "Thermonatrite",
+        "Trona",
+        "Vermiculite-K",
+        "Vermiculite-Na",
+        "illite-FeIII",
+
+        "Antarcticite",
+        "Bischofite",
+        "C2SH(alpha)",
+        "Ca2Cl2(OH)2:H2O(s)",
+        "Ca4Cl2(OH)6:13H2O(s)",
+        "CaCl2:2H2O(cr)",
+        "CaCl2:4H2O(cr)",
+        "CaCl2:H2O(s)",
+        "Carnallite",
+        "Cl2(g)",
+        "HCl(g)",
+        "Halite",
+        "Hydrophilite",
+        "Kainite",
+        "Lawrencite",
+        "Mg-oxychlorur",
+        "MgCl2(s)",
+        "MgCl2:2H2O(s)",
+        "MgCl2:4H2O(s)",
+        "MgCl2:H2O(s)",
+        "Sylvite",
+        "Tachyhydrite",
+
+
+        // for some reason there is another misspelled ferrihydrite
+        "Ferryhydrite",
+
+        // maybe interesting for kinetic dissolution
+        "Aluminate",
+        "Ferrite",
+        "Alite",
+        "Belite",
+        "Quartz_filler",
+        "SilicaFume",
+        "Slag_VTT",
+        "Quartz",
+        "SiO2(am)"
+    ],
+
+    "porosity_model":
+    {
+        "type": "TenJen",
+
+        "wc": 0.25,
+        "degree_hydration": 0.85,
+
+        "phases":
+            [
+            "CSH0.8",
+            "CSH1.2",
+            "CSH1.6"
+        ]
+    },
+
+    "multiscale_func":
+    {
+        "type": "degraded_CSH",
+        "free_pore_diff_coef": 2.2E-9
+    },
+
+
+    "compositions":
+        [
+
+        {
+            "name": "PureWater",
+            "temp": 40.0,
+            "units": "mol/kgw"
+        },
+
+
+        {
+            "name": "GraniteWater",
+            "temp": 40.0,
+            "pH": 8.2,
+            "units": "mmol/kgw",
+
+            "element_concentrations":
+                [
+                {"name": "Cl", "conc": 3.218 },
+                {"name": "C", "conc": 0.86 },
+
+                {"name": "K", "conc": 0.1 },
+                {"name": "Na", "conc": 2.8 },
+                {"name": "Ca", "conc": 0.5 },
+                {"name": "Si", "conc": 0.2 },
+                {"name": "S", "conc": 0.1 },
+                {"name": "Mg", "conc": 0.2 }
+            ]
+        },
+
+
+
+        {
+            "name": "PoreWater",
+            "temp": 40.0,
+            "pH": 12.053,
+            "units": "mol/kgw",
+
+            // same as hydration products
+            "element_concentrations":
+                [
+                { "name": "Al", "conc": 0.00077257},
+                { "name": "C", "conc": 0.00069991},
+                { "name": "Ca", "conc": 0.00069051},
+               // { "name": "Fe", "conc": 2.8302E-06},
+                { "name": "K", "conc": 0.74112},
+                { "name": "Mg", "conc": 3.2518E-09},
+                { "name": "Na", "conc": 0.2118},
+                { "name": "S", "conc": 0.44446},
+                { "name": "Si", "conc": 0.0046202}
+            ]
+        },
+
+        {
+            "name": "CalciteSeed",
+            "temp": 40.0,
+            "pH": 7,
+            "units": "mol/kgw",
+
+            "phases":
+                [
+                {"name": "Calcite", "amount": 27.1 }
+            ]
+        },
+
+        {
+            "name": "HydrationProducts",
+            "temp": 40.0,
+            "pH": 12.053,
+            "units": "mol/kgw",
+
+            "element_concentrations":
+                [
+                { "name": "Al", "conc": 0.00077257},
+                { "name": "C", "conc": 0.00069991},
+                { "name": "Ca", "conc": 0.00069051},
+               // { "name": "Fe", "conc": 2.8302E-06},
+                { "name": "K", "conc": 0.74112},
+                { "name": "Mg", "conc": 3.2518E-09},
+                { "name": "Na", "conc": 0.2118},
+                { "name": "S", "conc": 0.44446},
+                { "name": "Si", "conc": 0.0046202}
+
+            ],
+
+            "phases":
+                [
+                { "name": "CSH0.8", "amount": 1.53877367935862},
+                { "name": "CSH1.2", "amount": 6.77758859763773},
+                { "name": "Ettringite", "amount": 0.047157753980212},
+                { "name": "Calcite", "amount": 0.076913255296354},
+                { "name": "Hydrotalcite", "amount": 0.17783117656133},
+                { "name": "Stratlingite", "amount": 0.342349030848161}
+             //   { "name": "Ferrihydrite(am)", "amount": 0.440277670498871}
+
+            ],
+
+            "inert_fraction" : 0.0283
+        },
+
+        {
+            "name": "Inert",
+            "temp": 40.0,
+            "pH": 12.053,
+            "units": "mol/kgw",
+
+            "element_concentrations":
+                [
+                { "name": "Al", "conc": 0.00077257},
+                { "name": "C", "conc": 0.00069991},
+                { "name": "Ca", "conc": 0.00069051},
+               // { "name": "Fe", "conc": 2.8302E-06},
+                { "name": "K", "conc": 0.74112},
+                { "name": "Mg", "conc": 3.2518E-09},
+                { "name": "Na", "conc": 0.2118},
+                { "name": "S", "conc": 0.44446},
+                { "name": "Si", "conc": 0.0046202}
+            ],
+
+            "inert_fraction" : 0.75
+        }
+
+
+    ],
+
+
+    "ID_mapping":
+    // composition -> ID
+        [
+        {"PureWater": 0 },
+        {"GraniteWater": 1 },
+        {"PoreWater": 2 },
+        {"CalciteSeed": 3 },
+        {"HydrationProducts": 4 },
+        {"Inert": 5}
+    ],
+
+    "geometry":
+    {
+        "array":
+            [
+
+            1,
+            1, 1, 3, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+
+            1,
+            1, 1, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+
+            1,
+            1, 1, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+            4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+
+        ]
+    },
+
+
+    "dissolve_only_func":
+    {
+        "technique": "nucleation",
+
+        "poros_lower_thresh": 0.001,
+        "poros_upper_thresh": 1.0,
+
+        "nucleation_infos":
+        [
+            {
+                "phase": "Calcite",
+                "monomer": "CaCO3",
+                "molecule_vol":	6.1275E-29, // m3
+                "D": 9.30E-09, // m2/
+                "T": 298, // K
+                "HON_IT_water": 0.098, // J/m2
+                "HEN_IT_substrate": 0.047,
+                "HEN_IT_self": 0.020,
+                "HON_N0_water" : 3.33E+28,
+                "HEN_N0_substrate": 1.331E+08,
+                "HEN_N0_self": 1.331E+08
+            }
+        ]
+
+    },
+
+    "results":
+    {
+        "results_arrays_enabled":
+            [
+            "porosity",
+            "capillary_porosity"
+        ],
+
+        "aux_data":
+            [
+            { "SI": "saturation_indices Calcite" }
+        ]
+
+    }
+
+}
+
+
+
+

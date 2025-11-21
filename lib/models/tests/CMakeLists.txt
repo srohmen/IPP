@@ -1,0 +1,2 @@
+add_subdirectory(TennisJenningsCSHDiffusionCalcTest)
+add_subdirectory(MoriTanakaDiffusionCalcTest)

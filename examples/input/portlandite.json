@@ -1,0 +1,46 @@
+{
+    "maxIter": 1E+9,
+    "outputFrequency": 1,
+
+    "dimensions": {
+        "dims": [ 50, 50, 1 ],
+        "spatial_resolution": 0.0002
+    },
+
+    "database": "ThermoChimie_PHREEQC_SIT_v9b0.dat",
+    "database_extension": "molar_volumes.json",
+
+    "compositions":
+        [
+
+        {
+            "name": "Water"
+        },
+
+        {
+            "name": "Portlandite",
+            "units": "mol/L",
+            "phases":
+                [
+                {"name": "Portlandite", "amount": 2.0 }
+            ]
+        }
+
+
+    ],
+
+
+    "ID_mapping":
+        [
+        {"Water": 0 },
+        {"Portlandite": 1 },
+        {"Portlandite": 2 }
+    ],
+
+    "geometry":
+    {
+        "cemhyd_file": "input/portlandite.geo"
+    }
+}
+
+

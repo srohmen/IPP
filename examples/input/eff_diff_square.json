@@ -1,0 +1,66 @@
+{
+    "maxIter": 1.0E9,
+    "outputFrequency": 1000,
+    // "checkpointingTime": 0, // minutes calc time
+    "enable_chemistry": false,
+
+    "diff_coef_reference": 1.0E-9, // m2/s
+
+    "dimensions":
+    {
+        "dims": [ 301, 301, 1 ],
+        "offset": [ 0.0, 0.0, 0.0 ],
+        "spatial_resolution": 0.003333333333333333,
+        "porosity_threshold": 0.999,
+
+        "boundary_conditions":
+        {
+            "periodic": [true, false]
+        }
+    },
+    "database": "cemdata07_mod_vol.dat",
+    "database_extension": "molar_volumes.json",
+
+    "compositions":
+        [
+
+        {
+            "name": "Water",
+            "units": "mol/kgw"
+
+        },
+
+        {
+            "name": "OBSTACLE",
+            "units": "mol/kgw",
+            "inert_fraction": 1.0
+
+        }
+
+    ],
+
+    "ID_mapping":
+        [
+        {"Water": 0 },
+        {"OBSTACLE": 42 }
+    ],
+
+    "geometry":
+    {
+        "scale_passes": 1,
+        "cemhyd_file": "input/square.geo"
+    },
+
+    "results":
+    {
+        "diff_eff":
+            [
+            { "dim": 1, "tracer_name": "Z_tracer_y"}
+        ]
+    }
+
+
+}
+
+
+
